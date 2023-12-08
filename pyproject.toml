@@ -10,3 +10,7 @@ author_email = "james.brodovsky@gmail.com"
 description = "A package for wrapping angles in radians and degrees"
 license = "MIT"
 url = "https://github.com/jbrodovsky/angle_wrapper/"
+
+[tool.black]
+line-length = 100
+target-version = ['py311']
