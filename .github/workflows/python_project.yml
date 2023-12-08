@@ -38,6 +38,11 @@ jobs:
   #  - name: Test with pytest
   #    run: |
   #      pytest
+  pwd:
+    runs-on: ubuntu-latest
+    steps:
+      - name: PWD
+        run: pwd
   linting:
     runs-on: ubuntu-latest
     steps:
