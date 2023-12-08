@@ -44,6 +44,8 @@ jobs:
       - name: Lint
         uses: microsoft/action-python@0.7.0
         with:
+          root: angle_wrapper
+          toml: ./pyproject.toml
           black: true
           pylint: true
           flake8: true
@@ -54,4 +56,4 @@ jobs:
       - name: Pytest
         uses: microsoft/action-python@0.7.0
         with:          
-          testing: true
+          pytest: true
