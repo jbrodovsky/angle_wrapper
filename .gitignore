@@ -1,6 +1,3 @@
 .pytest_cache
-/angle_wrapper/__pycache__
 /test/__pycache__
-/anglewrapper.egg-info/
-/dist/
 /src/__pycache__
