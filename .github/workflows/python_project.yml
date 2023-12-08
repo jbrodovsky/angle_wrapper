@@ -38,14 +38,6 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-  pwd:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: PWD
-        run: |
-          pwd
-          ls -la
   linting:
     runs-on: ubuntu-latest
     steps:
@@ -54,6 +46,7 @@ jobs:
         uses: microsoft/action-python@0.7.0
         with:
           toml: pyproject.toml
+          workdir: ./angle_wrapper
           black: true
           pylint: true
           flake8: true
