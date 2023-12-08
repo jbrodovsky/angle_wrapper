@@ -46,7 +46,6 @@ jobs:
         uses: microsoft/action-python@0.7.0
         with:
           toml: pyproject.toml
-          workdir: ./angle_wrapper
           black: true
           pylint: true
           flake8: true
