@@ -5,7 +5,7 @@ Testing battery for angles.py
 import math
 
 # import pytest
-from angle_wrapper.angle_wrapper import wrap_to_pi, wrap_to_2pi, wrap_to_180, wrap_to_360
+from src.angle_wrapper import wrap_to_pi, wrap_to_2pi, wrap_to_180, wrap_to_360
 
 
 def test_wrap_to_pi():
