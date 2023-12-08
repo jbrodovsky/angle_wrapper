@@ -42,8 +42,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: PWD
-        run: pwd
-        run: ls -la
+        run: |
+          pwd
+          ls -la
   linting:
     runs-on: ubuntu-latest
     steps:
