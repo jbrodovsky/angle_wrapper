@@ -1,3 +1,7 @@
+[![Upload Python Package](https://github.com/jbrodovsky/angle_wrapper/actions/workflows/python-publish.yml/badge.svg?branch=main)](https://github.com/jbrodovsky/angle_wrapper/actions/workflows/python-publish.yml)
+
+[![Python package](https://github.com/jbrodovsky/angle_wrapper/actions/workflows/python_project.yml/badge.svg)](https://github.com/jbrodovsky/angle_wrapper/actions/workflows/python_project.yml)
+
 # Angle Wrapper
 
 A simple Python only toolbox for wrapping angles to $\pm180^\circ$, $\left[0^\circ, 360^\circ\right]$, $\pm\pi$, or $\left[0,  2\pi\right]$. Wraps single values, tuples, lists, and other various iterable types that implement the `__iter__` attribute such as NumPy arrays and Pandas data series.
