@@ -25,14 +25,13 @@ def to_pi(angle):
     """
     if isinstance(angle, (int, float)):
         return (angle + math.pi) % (2 * math.pi) - math.pi
-    elif isinstance(angle, list):
+    if isinstance(angle, list):
         return [to_pi(a) for a in angle]
-    elif isinstance(angle, tuple):
+    if isinstance(angle, tuple):
         return tuple(to_pi(a) for a in angle)
-    elif hasattr(angle, "__iter__"):  # Check if it's an iterable (including numpy array)
+    if hasattr(angle, "__iter__"):  # Check if it's an iterable (including numpy array)
         return [to_pi(a) for a in angle]
-    else:
-        raise TypeError("Unsupported data type for angle")
+    raise TypeError("Unsupported data type for angle")
 
 
 def to_2pi(angle):
@@ -55,14 +54,13 @@ def to_2pi(angle):
     """
     if isinstance(angle, (int, float)):
         return angle % (2 * math.pi)
-    elif isinstance(angle, list):
+    if isinstance(angle, list):
         return [to_2pi(a) for a in angle]
-    elif isinstance(angle, tuple):
+    if isinstance(angle, tuple):
         return tuple(to_2pi(a) for a in angle)
-    elif hasattr(angle, "__iter__"):
+    if hasattr(angle, "__iter__"):
         return [to_2pi(a) for a in angle]
-    else:
-        raise TypeError("Unsupported data type for angle")
+    raise TypeError("Unsupported data type for angle")
 
 
 def to_180(angle):
@@ -85,14 +83,13 @@ def to_180(angle):
     """
     if isinstance(angle, (int, float)):
         return (angle + 180) % 360 - 180
-    elif isinstance(angle, list):
+    if isinstance(angle, list):
         return [to_180(a) for a in angle]
-    elif isinstance(angle, tuple):
+    if isinstance(angle, tuple):
         return tuple(to_180(a) for a in angle)
-    elif hasattr(angle, "__iter__"):
+    if hasattr(angle, "__iter__"):
         return [to_180(a) for a in angle]
-    else:
-        raise TypeError("Unsupported data type for angle")
+    raise TypeError("Unsupported data type for angle")
 
 
 def to_360(angle):
@@ -115,11 +112,10 @@ def to_360(angle):
     """
     if isinstance(angle, (int, float)):
         return angle % 360
-    elif isinstance(angle, list):
+    if isinstance(angle, list):
         return [to_360(a) for a in angle]
-    elif isinstance(angle, tuple):
+    if isinstance(angle, tuple):
         return tuple(to_360(a) for a in angle)
-    elif hasattr(angle, "__iter__"):
+    if hasattr(angle, "__iter__"):
         return [to_360(a) for a in angle]
-    else:
-        raise TypeError("Unsupported data type for angle")
+    raise TypeError("Unsupported data type for angle")
