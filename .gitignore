@@ -1,6 +1,8 @@
 .pytest_cache
-/angle_wrapper/__pycache__
 /test/__pycache__
-/anglewrapper.egg-info/
-/dist/
 /src/__pycache__
+tutorial_env
+build
+dist
+.venv
+*.egg-info
