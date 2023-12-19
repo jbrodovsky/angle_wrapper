@@ -12,6 +12,8 @@ wrap.to_180(270)
 
 This package has no external dependancies to run in Python-only mode. Development and testing requires `pytest` or `unittest` installed in the local environment as well as numpy.
 
+Read me update to trigger automatic release update.
+
 This package is serving a few purposes:
 
 * Writing good Python code
