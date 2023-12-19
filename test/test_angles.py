@@ -23,8 +23,8 @@ def test_to_2pi():
     """
     Test wrap_to_2pi function
 
-    This function tests the behavior of the wrap_to_2pi function by checking if the result of wrapping
-    the given radians to the range [0, 2pi) is equal to the expected value.
+    This function tests the behavior of the wrap_to_2pi function by checking if the result of
+    wrapping the given radians to the range [0, 2pi) is equal to the expected value.
     """
     radians = 5 * math.pi / 2
     assert to_2pi(radians) == math.pi / 2
@@ -67,8 +67,8 @@ def test_to_360_negative():
     """
     Test wrap_to_360 function with negative input
 
-    This function tests the behavior of the wrap_to_360 function by passing a value of -450.0 degrees
-    and asserting that the result is 270.0 degrees.
+    This function tests the behavior of the wrap_to_360 function by passing a value of
+    -450.0 degrees and asserting that the result is 270.0 degrees.
     """
     degrees = -450.0
     assert to_360(degrees) == 270.0
@@ -89,8 +89,9 @@ def test_to_2pi_negative():
     """
     Test wrap_to_2pi function with negative input
 
-    This function tests the behavior of the wrap_to_2pi function by checking if the result of wrapping
-    the given radians to the range [0, 2pi) is equal to the expected value.
+    This function tests the behavior of the wrap_to_2pi function by checking if the
+    result of wrapping the given radians to the range [0, 2pi) is equal to the expected
+    value.
     """
     radians = -5 * math.pi / 2
     assert to_2pi(radians) == 3 * math.pi / 2
@@ -98,8 +99,8 @@ def test_to_2pi_negative():
 
 def test_to_180_range():
     """
-    Test the wrap.to_180 function with a range of values in an iterable container such as a list or numpy
-    array.
+    Test the wrap.to_180 function with a range of values in an iterable container such
+    as a list or numpy array.
     """
 
     degrees = [-270.0, -90.0, 90.0, 270.0]
@@ -110,8 +111,8 @@ def test_to_180_range():
 
 def test_to_360_range():
     """
-    Test the wrap.to_360 function with a range of values in an iterable container such as a list or numpy
-    array.
+    Test the wrap.to_360 function with a range of values in an iterable container such
+    as a list or numpy array.
     """
 
     degrees = [-450.0, -90.0, 90.0, 450.0]
@@ -122,8 +123,8 @@ def test_to_360_range():
 
 def test_to_pi_range():
     """
-    Test the wrap.to_pi function with a range of values in an iterable container such as a list or numpy
-    array.
+    Test the wrap.to_pi function with a range of values in an iterable container such
+    as a list or numpy array.
     """
 
     radians = [-3 * math.pi / 2, -math.pi / 2, math.pi / 2, 3 * math.pi / 2]
@@ -134,8 +135,8 @@ def test_to_pi_range():
 
 def test_to_2pi_range():
     """
-    Test the wrap.to_2pi function with a range of values in an iterable container such as a list or numpy
-    array.
+    Test the wrap.to_2pi function with a range of values in an iterable container such
+    as a list or numpy array.
     """
 
     radians = [-5 * math.pi / 2, -math.pi / 2, math.pi / 2, 5 * math.pi / 2]
@@ -146,8 +147,8 @@ def test_to_2pi_range():
 
 def test_to_180_numpy():
     """
-    Test the wrap.to_180 function with a range of values in an iterable container such as a list or numpy
-    array.
+    Test the wrap.to_180 function with a range of values in an iterable container such
+    as a list or numpy array.
     """
     degrees = np.array([-270.0, -90.0, 90.0, 270.0])
     expected = np.array([90.0, -90.0, 90.0, -90.0])
@@ -157,8 +158,8 @@ def test_to_180_numpy():
 
 def test_to_360_numpy():
     """
-    Test the wrap.to_360 function with a range of values in an iterable container such as a list or numpy
-    array.
+    Test the wrap.to_360 function with a range of values in an iterable container such
+    as a list or numpy array.
     """
     degrees = np.array([-450.0, -90.0, 90.0, 450.0])
     expected = np.array([270.0, 270.0, 90.0, 90.0])
@@ -168,8 +169,8 @@ def test_to_360_numpy():
 
 def test_to_pi_numpy():
     """
-    Test the wrap.to_pi function with a range of values in an iterable container such as a list or numpy
-    array.
+    Test the wrap.to_pi function with a range of values in an iterable container such
+    as a list or numpy array.
     """
     radians = np.array([-3 * math.pi / 2, -math.pi / 2, math.pi / 2, 3 * math.pi / 2])
     expected = np.array([math.pi / 2, -math.pi / 2, math.pi / 2, -math.pi / 2])
@@ -179,8 +180,8 @@ def test_to_pi_numpy():
 
 def test_to_2pi_numpy():
     """
-    Test the wrap.to_2pi function with a range of values in an iterable container such as a list or numpy
-    array.
+    Test the wrap.to_2pi function with a range of values in an iterable container such
+    as a list or numpy array.
     """
     radians = np.array([-5 * math.pi / 2, -math.pi / 2, math.pi / 2, 5 * math.pi / 2])
     expected = np.array([3 * math.pi / 2, 3 * math.pi / 2, math.pi / 2, math.pi / 2])
