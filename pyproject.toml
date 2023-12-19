@@ -2,17 +2,18 @@
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
-[tool.setuptools.packages.find]
-where = ["src"]
-
-[metadata]
-name = "angle_wrapper"
-version = 0.1
-author = "James Brodovsky"
-author_email = "james.brodovsky@gmail.com"
+[project]
+name = "anglewrapper"
+version = "0.1"
+requires-python = ">=3.8"
 description = "A package for wrapping angles in radians and degrees"
-license = "MIT"
-url = "https://github.com/jbrodovsky/angle_wrapper/"
+authors = [{name="James Brodovsky"}]
+license = {file = "LICENSE"}
+readme = "README.md"
+keywords = ["angle", "wrapper", "radians", "degrees"]
+
+[project.urls]
+Homepage = "https://github.com/jbrodovsky/angle_wrapper"
 
 [tool.black]
 line-length = 100
