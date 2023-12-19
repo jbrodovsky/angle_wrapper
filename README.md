@@ -1,6 +1,6 @@
 # Angle Wrapper
 
-A simple Python only toolbox for wrapping angles to $\pm$ 180, [0, 360], $\pm\pi$, [0, 2 $\pi$]. Wraps single values, tuples, lists, and other various iterable types that implement the `__iter__` attribute such as NumPy arrays and Pandas data series.
+A simple Python only toolbox for wrapping angles to $\pm180^\circ$, $[0^\circ 360^\circ]$, $\pm\pi$, $[0, 2\pi]$. Wraps single values, tuples, lists, and other various iterable types that implement the `__iter__` attribute such as NumPy arrays and Pandas data series.
 
 This package is serving a few purposes:
 
