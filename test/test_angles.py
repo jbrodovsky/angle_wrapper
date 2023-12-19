@@ -4,6 +4,7 @@ Testing battery for angles.py
 
 import math
 import numpy as np
+import pandas as pd
 
 from src.anglewrapper.wrap import to_pi, to_2pi, to_180, to_360
 
@@ -185,5 +186,29 @@ def test_to_2pi_numpy():
     """
     radians = np.array([-5 * math.pi / 2, -math.pi / 2, math.pi / 2, 5 * math.pi / 2])
     expected = np.array([3 * math.pi / 2, 3 * math.pi / 2, math.pi / 2, math.pi / 2])
+    result = to_2pi(radians)
+    assert np.allclose(result, expected)
+
+
+def test_to_180_pandas():
+    """
+    Test the wrap.to_180 function with a range of values in an iterable container such
+    as a list or numpy array.
+    """
+
+    degrees = pd.Series([-270.0, -90.0, 90.0, 270.0])
+    expected = pd.Series([90.0, -90.0, 90.0, -90.0])
+    result = to_180(degrees)
+    assert np.allclose(result, expected)
+
+
+def test_to_2pi_pandas():
+    """
+    Test the wrap.to_2pi function with a range of values in an iterable container such
+    as a list or numpy array.
+    """
+
+    radians = pd.Series([-5 * math.pi / 2, -math.pi / 2, math.pi / 2, 5 * math.pi / 2])
+    expected = pd.Series([3 * math.pi / 2, 3 * math.pi / 2, math.pi / 2, math.pi / 2])
     result = to_2pi(radians)
     assert np.allclose(result, expected)
