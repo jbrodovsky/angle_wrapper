@@ -9,7 +9,8 @@ A simple Python only toolbox for wrapping angles to $\pm180^\circ$, $\left[0^\ci
 To install: `pip install anglewrapper`
 
 To run:
-```
+
+```python
 from anglewrapper import wrap
 wrap.to_180(270)
 ```
@@ -27,4 +28,4 @@ This package is serving a few purposes:
   * Code formatting and linting
 * Continuous integration and continuous delivery to PyPI via GitHub Actions
 * Building, testing, and delivering Python packages
-* Some basic C++ practice and packaging it into libraries and/or Python packages 
+* Some basic C++ practice and packaging it into libraries and/or Python packages
