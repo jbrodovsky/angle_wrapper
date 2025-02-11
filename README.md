@@ -15,16 +15,3 @@ wrap.to_180(270)
 ```
 
 This package has no external dependancies to run in Python-only mode. Development and testing requires `pytest` or `unittest` installed in the local environment as well as numpy.
-
-Read me update to trigger automatic release update.
-
-This package is serving a few purposes:
-
-* Writing good Python code
-* Some basic "agile" workflow practice including
-  * Short lived branches for specific features
-  * Unit testing
-  * Code formatting and linting
-* Continuous integration and continuous delivery to PyPI via GitHub Actions
-* Building, testing, and delivering Python packages
-* Some basic C++ practice and packaging it into libraries and/or Python packages 
